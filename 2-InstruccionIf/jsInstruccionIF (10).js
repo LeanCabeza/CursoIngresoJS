@@ -1,16 +1,17 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	var numeroAleatorio = Math.random(1,10)*10;
-	numeroAleatorio= Math.floor(numeroAleatorio);
+	var nota ;
+	var maximo = 10 ; 
+	var minimo = 1 ;
+	var mensaje = "Aprobo . Nota : "
+	nota = Math.floor(Math.random()*((maximo+1)- minimo)+ minimo);
 
-
-	if (numeroAleatorio >= 9) {
-		alert("Aprobo con un "+ numeroAleatorio);
-	}else if(numeroAleatorio > 4){
-		alert("Excelente con un "+ numeroAleatorio);
-	}else if(numeroAleatorio <= 3) {
-		alert("Vamos , la proxima se puede !! Te sacaste un " + numeroAleatorio);
+	if(nota>=9){
+		alert("Excelente te sacaste un "+ nota)
+	}else if (nota >=4){
+		alert("Aprobo "+ nota)
+	}else{
+		alert("Vamos la proxima se puede con un "+ nota);
 	}
 
 }//FIN DE LA FUNCIÓN
