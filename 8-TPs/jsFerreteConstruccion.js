@@ -13,7 +13,7 @@ function Rectangulo ()
 	perimetroRectangulo = (largo*2) + (ancho * 2) ;
 	vueltasDeAlambre3 = perimetroRectangulo * 3 ;
 
-	alert(vueltasDeAlambre3);
+	alert("se necesitan comprar  " + vueltasDeAlambre3 + " Metros de alambre" );
 }
 function Circulo () 
 {
@@ -33,7 +33,7 @@ function Materiales ()
 	var radio  =parseFloat(document.getElementById("Radio").value);
 
 	areaRectangulo = largo * ancho  ;
-	
+		// sacar la superficie 
 
 	bolasDeCemento = 2; 
 	bolsasDeCal = 3 ; 	
