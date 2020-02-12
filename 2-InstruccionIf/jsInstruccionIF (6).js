@@ -9,7 +9,7 @@ edad=parseInt(document.getElementById("edad").value) ;
 		alert("Sos mayor de edad");
 	}else if(edad <=17 && edad >=13) {
 		alert("Sos un adolecente");
-	}else if(edad <=12) {
+	}else {
 		alert("Sos un niño");
 	}
 
