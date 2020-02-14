@@ -33,7 +33,7 @@ function Materiales ()
 	var radio  =parseFloat(document.getElementById("Radio").value);
 
 	areaRectangulo = largo * ancho  ;
-		// sacar la superficie 
+		// sacar la superficiez
 
 	bolasDeCemento = 2; 
 	bolsasDeCal = 3 ; 	
