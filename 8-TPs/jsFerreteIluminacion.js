@@ -3,9 +3,11 @@ function CalcularPrecio ()
 
 
  	// capto variables LAMPARAS , MARCA LAMPARAS 
- 		var	nroLamparas = parseFloat( document.getElementById('Cantidad').value); 
+ 		var	nroLamparas = parseInt( document.getElementById('Cantidad').value); 
  		var marcaLampara = document.getElementById('Marca').value ;
  		var precioUnitario = 35 ; // puse el precio de la lampara en una variable por si algun dia aumenta 
+
+
 
 
 				switch (nroLamparas) {
