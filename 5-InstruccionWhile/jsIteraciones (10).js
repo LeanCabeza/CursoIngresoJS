@@ -8,6 +8,11 @@ function mostrar()
 	var sumaPositivos = 0   ; 
 	var contadorPositivos = 0; 
 	var contadorDeCeros = 0 ;
+	var nrosPares = 0 ;
+	var promedioPositivos = 0 ;
+	var promedioNegativos = 0 ;
+	var diferenciaEntreNegativosYPositivos = 0 ;
+
 
 	do{
 		numero = parseInt(prompt("Ingrese un Numero")); 
@@ -34,13 +39,32 @@ function mostrar()
 
 
 
-	//  IF (nroPares %2 == 0 ) , esto sifgnifica si el esto da 0 , ES PAR.
+		//  IF (nroPares %2 == 0 ) , esto sifgnifica si el esto da 0 , ES PAR.
+		if (numero %2 == 0 ) {
+				nrosPares ++ ;	
+		}
 
-		document.write("La sumade los negativos es " + sumaNegativos + "<br>" );
-		document.write("La sumade los positovs es " + sumaPositivos + "<br>" );
-		document.write("La cantidad de nros negativos ingresados es " + contadorNegativos + "<br>" );
-		document.write("La cantidad de nros positivos ingresados es " + contadorPositivos + "<br>" );
-		document.write("La cantidad de Ceros es " + contadorDeCeros + "<br>" );
+		//	promedio Positivos 
+			var promedioPositivos = sumaPositivos / contadorPositivos ; 	
+
+		// promedio Negativos 
+
+			var promedioNegativos = sumaNegativos / contadorNegativos ; 
+
+		// diferencia entre nros Negativos y nros Positivos 
+
+			var diferenciaEntreNegativosYPositivos = promedioPositivos - promedioNegativos ; 
+
+
+			document.write("La suma de los negativos es " + sumaNegativos + "<br>" );
+			document.write("La suma de los positivos es " + sumaPositivos + "<br>" );
+			document.write("La cantidad de nros negativos ingresados es " + contadorNegativos + "<br>" );
+			document.write("La cantidad de nros positivos ingresados es " + contadorPositivos + "<br>" );
+			document.write("La cantidad de Ceros es " + contadorDeCeros + "<br>" );
+			document.write("La cantidad de nros pares es " + nrosPares + "<br>" );
+			document.write("El promedio de los positivos es " + promedioPositivos + "<br>" );
+			document.write("El promedio de los negativos es " + promedioNegativos + "<br>" );
+			document.write("La diferencia entre positivos y negativos es " + diferenciaEntreNegativosYPositivos + "<br>" );
 
 
 
