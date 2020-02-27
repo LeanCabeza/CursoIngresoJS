@@ -5,7 +5,7 @@ function mostrar()
 
 
 		if(numero1 == numero2){
-			alert("Como los numero son iguales los concatene" + numero1 +" "+numero2);
+			alert("Como los numero son iguales los concatene " + numero1 +" "+numero2);
 		}else if (numero1 > numero2){
 			var resta = numero1-numero2 ;
 			alert("Como el primero es mayor los reste y dio "+resta);

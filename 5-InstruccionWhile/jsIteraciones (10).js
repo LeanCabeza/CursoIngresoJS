@@ -11,7 +11,7 @@ function mostrar()
 	var nrosPares = 0 ;
 	var promedioPositivos = 0 ;
 	var promedioNegativos = 0 ;
-	var diferenciaEntreNegativosYPositivos = 0 ;
+	var diferenciaEntreNegativosYPositivos;
 
 
 	do{
@@ -45,11 +45,14 @@ function mostrar()
 		}
 
 		//	promedio Positivos 
-			var promedioPositivos = sumaPositivos / contadorPositivos ; 	
+			if (contadorPositivos != 0){
+			var promedioPositivos = sumaPositivos / contadorPositivos ; 
+			}	
 
 		// promedio Negativos 
-
+			if (contadorNegativos != 0){
 			var promedioNegativos = sumaNegativos / contadorNegativos ; 
+		}
 
 		// diferencia entre nros Negativos y nros Positivos 
 
